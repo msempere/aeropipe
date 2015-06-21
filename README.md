@@ -1,4 +1,4 @@
-# aeropipe
+# Aeropipe
 Treat Aerospike Large Lists unix-like pipelines
 
 ## Installation:
@@ -9,10 +9,10 @@ make install
 
 ## Setup
 Aeropipe needs the following environment vars in order to connect to Aerospike:
- - 			AEROSPIKE_HOST (Database host, default: 127.0.0.1)
- - 			AEROSPIKE_PORT (Database port, default: 3000)
- - 			AEROSPIKE_AEROPIPE_NAMESPACE (Namespace configuration for Aerospike. [More info] (https://www.aerospike.com/docs/operations/configure/namespace/), default: aeropipe_ns)
- - 			AEROSPIKE_AEROPIPE_LIST (List where the data will be placed/located, default: aeropipe_list)
+ - 			`AEROSPIKE_HOST` (Database host, default: 127.0.0.1)
+ - 			`AEROSPIKE_PORT` (Database port, default: 3000)
+ - 			`AEROSPIKE_AEROPIPE_NAMESPACE` (Namespace configuration for Aerospike. [More info] (https://www.aerospike.com/docs/operations/configure/namespace/), default: aeropipe_ns)
+ - 			`AEROSPIKE_AEROPIPE_LIST` (List where the data will be placed/located, default: aeropipe_list)
 
 Example: (~/.basrc)
 ```

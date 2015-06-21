@@ -34,5 +34,7 @@ Pipe Aerospike content to file:
 aeropipe > /tmp/apache2/access.log
 ```
 
+![Animated example](http://i.imgur.com/j50gA76.gif)
+
 ## License
 Distributed under MIT license. See `LICENSE` for more information.

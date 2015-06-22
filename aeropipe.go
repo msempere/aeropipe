@@ -42,7 +42,6 @@ func read(client *aerospike.Client, namespace, set string) {
 
 func store(client *aerospike.Client, policy *aerospike.WritePolicy, namespace, list string) {
 	s := bufio.NewScanner(os.Stdin)
-	var i uint64 = 0
 
 	for s.Scan() {
 		binkey := bson.NewObjectId()
@@ -51,7 +50,6 @@ func store(client *aerospike.Client, policy *aerospike.WritePolicy, namespace, l
 
 		err = client.PutBins(policy, key, aerospike.NewBin("", s.Text()))
 		util.PanicOnError("Error while inserting bins", err)
-		i += 1
 	}
 }
 

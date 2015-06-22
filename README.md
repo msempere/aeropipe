@@ -3,7 +3,7 @@ Treat Aerospike Large Lists unix-like pipelines
 
 ## Installation:
 ```
-make buid
+make build
 make install
 ```
 
